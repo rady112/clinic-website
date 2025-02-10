@@ -16,22 +16,16 @@
             background-attachment: fixed;
             color: white;
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Moves content higher on the page */
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
             min-height: 100vh;
             padding-top: 50px; /* Adds extra spacing from the top */
-        }
-        .container {
-            width: 40%; /* Narrower outer box */
-            background: rgba(255, 255, 255, 0.2); /* Opaque white background */
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .section {
             margin-bottom: 10px;
             padding: 10px;
-            text-align: left; /* Align titles to the left */
+            text-align: center; /* Centering the titles */
         }
         .section h2 {
             margin-top: 0;
@@ -62,22 +56,21 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="section">
-            <h2>📞 Contact</h2>
-            <div class="buttons">
-                <a class="button" href="tel:+972509306075">Call: +972509306075</a>
-                <a class="button" href="https://www.instagram.com/dr.alex.shehady?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-                <a class="button" href="https://wa.me/972509306075" target="_blank">WhatsApp</a>
-            </div>
+    <div class="section">
+        <h2>📞 Contact</h2>
+        <div class="buttons">
+            <a class="button" href="tel:+972509306075">Call: +972509306075</a>
+            <a class="button" href="https://www.instagram.com/dr.alex.shehady?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+            <a class="button" href="https://wa.me/972509306075" target="_blank">WhatsApp</a>
+            <a class="button" href="https://www.facebook.com/alexs.shehady" target="_blank">Facebook</a>
         </div>
-        
-        <div class="section">
-            <h2>📍 Location</h2>
-            <div class="buttons">
-                <a class="button" href="https://maps.app.goo.gl/aXWxJsTLHsjEivjA7" target="_blank">Google Maps</a>
-                <a class="button" href="https://ul.waze.com/ul?place=Eh3XqNeXJyAxMTIsIEthZnIgWWFzaWYsIElzcmFlbCIuKiwKFAoSCf_ngBdkzB0VERekcrvmioBWEhQKEgmFxxdVYcwdFRFGBjPNnT5pUw&ll=32.95595500%2C35.16380700&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">Waze</a>
-            </div>
+    </div>
+    
+    <div class="section">
+        <h2>📍 Location</h2>
+        <div class="buttons">
+            <a class="button" href="https://maps.app.goo.gl/aXWxJsTLHsjEivjA7" target="_blank">Google Maps</a>
+            <a class="button" href="https://ul.waze.com/ul?place=Eh3XqNeXJyAxMTIsIEthZnIgWWFzaWYsIElzcmFlbCIuKiwKFAoSCf_ngBdkzB0VERekcrvmioBWEhQKEgmFxxdVYcwdFRFGBjPNnT5pUw&ll=32.95595500%2C35.16380700&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">Waze</a>
         </div>
     </div>
 </body>
