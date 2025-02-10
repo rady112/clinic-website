@@ -41,12 +41,12 @@
             font-size: 16px;
             color: white;
         }
-        .links {
+        .buttons {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
         }
-        .links a, .button {
-            flex: 1;
+        .button {
             text-align: center;
             padding: 10px;
             background: rgba(255, 255, 255, 0.4);
@@ -57,8 +57,9 @@
             display: inline-block;
             margin: 5px;
             cursor: pointer;
+            width: 80%;
         }
-        .links a:hover, .button:hover {
+        .button:hover {
             background: rgba(255, 255, 255, 0.6);
         }
     </style>
@@ -67,36 +68,19 @@
     <div class="container">
         <div class="section">
             <h2>📞 Contact</h2>
-            <p><a href="tel:+972509306075">Call: +972509306075</a></p>
-            <a class="button" href="https://www.instagram.com/dr.alex.shehady?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-            <a class="button" href="https://wa.me/972509306075" target="_blank">WhatsApp</a>
-        </div>
-        
-        <div class="section">
-            <h2>📍 Location</h2>
-            <div class="links">
-                <a href="https://maps.app.goo.gl/aXWxJsTLHsjEivjA7" target="_blank">Google Maps</a>
-                <a href="https://ul.waze.com/ul?place=Eh3XqNeXJyAxMTIsIEthZnIgWWFzaWYsIElzcmFlbCIuKiwKFAoSCf_ngBdkzB0VERekcrvmioBWEhQKEgmFxxdVYcwdFRFGBjPNnT5pUw&ll=32.95595500%2C35.16380700&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">Waze</a>
+            <div class="buttons">
+                <a class="button" href="tel:+972509306075">Call: +972509306075</a>
+                <a class="button" href="https://www.instagram.com/dr.alex.shehady?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+                <a class="button" href="https://wa.me/972509306075" target="_blank">WhatsApp</a>
             </div>
         </div>
         
         <div class="section">
-            <h2>📝 Notes (Arabic)</h2>
-            <p>العيادة ليست موجودة على الخريطة لانه لم يتم تحديث الصور منذ سنة 2012. <br>
-            العيادة متواجدة في المكان الذي يظهر فيه دكان "طوطو" טוטו<br>
-            مرفق في هذا الرابط صور لمساعدة الزائر في الوصول الى العيادة</p>
-        </div>
-        
-        <div class="section">
-            <h2>📝 Notes (Hebrew)</h2>
-            <p>המפה לא עודכנה משנת 2012, במקום המרפאה מופיע חנות בשם "טוטו"<br>
-            מצורף תמונות עדכניות לאזור לסייע למבקר לאתר את המרפאה</p>
-        </div>
-        
-        <div class="section">
-            <h2>📝 Notes (English)</h2>
-            <p>The map has not been updated since 2012, instead of the clinic, there is a store front called "טוטו".<br>
-            Attached to this QR code are recent photos to help locate the clinic.</p>
+            <h2>📍 Location</h2>
+            <div class="buttons">
+                <a class="button" href="https://maps.app.goo.gl/aXWxJsTLHsjEivjA7" target="_blank">Google Maps</a>
+                <a class="button" href="https://ul.waze.com/ul?place=Eh3XqNeXJyAxMTIsIEthZnIgWWFzaWYsIElzcmFlbCIuKiwKFAoSCf_ngBdkzB0VERekcrvmioBWEhQKEgmFxxdVYcwdFRFGBjPNnT5pUw&ll=32.95595500%2C35.16380700&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">Waze</a>
+            </div>
         </div>
     </div>
 </body>
